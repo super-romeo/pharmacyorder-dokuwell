@@ -15,6 +15,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="description" content="For independent UK pharmacies: every order line priced across your wholesalers, the best price picked and the order sent before cut-off.">
 <link rel="icon" href="favicon.svg">
 <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="variant.css">
 <script src="smoke.js" defer></script>
 <!-- faq-jsonld:start -->
 <script type="application/ld+json">
@@ -73,38 +77,68 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<header><div class="wrap">
-  <div class="logo"><a href="index.html" data-ev="click_logo_home">Order Compare</a></div>
-  <nav class="top"><a href="#what" data-ev="click_nav_what">What you get</a><a href="price.html" data-ev="click_nav_price">Price</a><a href="#example" data-ev="click_nav_example">Example</a><a href="#start" data-ev="click_nav_start">Start</a></nav>
+<header><div class="shell">
+  <a class="home" href="index.html" data-ev="click_logo_home">Order Compare</a>
+  <nav><a href="#what" data-ev="click_nav_what">What you get</a><a href="price.html" data-ev="click_nav_price">Price</a><a href="#example" data-ev="click_nav_example">Example</a><a href="#start" data-ev="click_nav_start">Start</a></nav>
 </div></header>
 
-<div class="wrap">
-  <div class="hero">
-    <h1>Every line of your pharmacy order at the best wholesaler price — before the cut-off</h1>
-    <p class="sub">For independent pharmacies with one site and no dedicated buyer: you build the order once, each line is priced across the wholesalers you use, the best price is picked for every item, and the split order goes to each supplier for you to confirm.</p>
-    <a class="cta" href="price.html" data-ev="cta_click">I need this</a>
-    <p class="cta-note">Service in preparation · No payment is accepted on this page</p>
-  </div>
+<main class="shell">
+  <section class="split">
+    <div class="stack">
+      <p class="meta rise"><span class="dot"></span> For independent pharmacies</p>
+      <h1 class="rise" style="--i:1" data-len="long">Every line of your pharmacy order at the best wholesaler price&nbsp;<span class="soft">— before the cut-off</span></h1>
+      <p class="rise" style="--i:2">For independent pharmacies with one site and no dedicated buyer: you build the order once, each line is priced across the wholesalers you use, the best price is picked for every item, and the split order goes to each supplier for you to confirm.</p>
+      <a class="button rise" style="--i:3" href="price.html" data-ev="cta_click">I need this</a>
+      <p class="meta rise" style="--i:4">Service in preparation · No payment is accepted on this page</p>
+    </div>
+    <figure class="window rise" style="--i:2"><svg aria-hidden="true" focusable="false" class="shot" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><rect x="80" y="80" width="1040" height="640" rx="24" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="130" y="168" font-size="40" fill="#0a1524" font-weight="600">Prices side by side</text><line x1="120" y1="210" x2="1080" y2="210" stroke="#dde2ea" stroke-width="3" /><rect x="130" y="248" width="48" height="48" rx="8" fill="#dfe8f7" /><text x="200" y="282" font-size="32" fill="#0a1524">Best price per line</text><rect x="130" y="348" width="48" height="48" rx="8" fill="#dfe8f7" /><text x="200" y="382" font-size="32" fill="#0a1524">Split order sent</text><rect x="130" y="448" width="48" height="48" rx="8" fill="#dfe8f7" /><rect x="200" y="460" width="240" height="24" rx="12" fill="#b9c3d2" /><rect x="130" y="548" width="48" height="48" rx="8" fill="#dfe8f7" /><rect x="200" y="560" width="300" height="24" rx="12" fill="#b9c3d2" /><rect x="700" y="250" width="370" height="400" rx="20" fill="#dfe8f7" /><text x="730" y="312" font-size="32" fill="#0a1524" font-weight="600">before the cut-off</text><rect x="740" y="420" width="50" height="180" rx="8" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="820" y="480" width="50" height="120" rx="8" fill="#b9c3d2" /><rect x="900" y="380" width="50" height="220" rx="8" fill="#12397a" /><rect x="980" y="510" width="50" height="90" rx="8" fill="#dde2ea" /></svg></figure>
+    <dl class="facts">
+      <div><dt>For</dt><dd>Independent pharmacies</dd></div>
+      <div><dt>What</dt><dd>Best wholesaler price</dd></div>
+      <div><dt>How</dt><dd>Build the order once</dd></div>
+      <div><dt>Service</dt><dd>Service in preparation</dd></div>
+    </dl>
+  </section>
 
   <section id="what" data-view="features_view">
-    <h2>What you get</h2>
-    <div class="grid">
-      <div class="card"><b>Prices side by side</b><span>Each order line priced across your wholesalers in one table.</span><br><a class="btn" href="price.html" data-ev="feature_compare">I need this</a></div>
-      <div class="card"><b>Best price per line</b><span>The cheapest available supplier picked for every item, with stock shown.</span><br><a class="btn" href="price.html" data-ev="feature_best">I need this</a></div>
-      <div class="card"><b>Split order sent</b><span>The order split by supplier and sent to each one for you to confirm.</span><br><a class="btn" href="price.html" data-ev="feature_split">I need this</a></div>
-      <div class="card"><b>Savings by month</b><span>What you saved against your usual supplier, month by month.</span><br><a class="btn" href="price.html" data-ev="feature_savings">I need this</a></div>
+    <div class="stack"><h2>What you get</h2></div>
+    <div class="bento">
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="80" y="70" width="640" height="460" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="120" y="150" font-size="36" fill="#0a1524" font-weight="600">Prices side by side</text><rect x="120" y="210" width="240" height="270" rx="12" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="440" y="210" width="240" height="270" rx="12" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><line x1="360" y1="250" x2="440" y2="250" stroke="#b9c3d2" stroke-width="3" /><rect x="144" y="240" width="150" height="16" rx="6" fill="#dde2ea" /><rect x="464" y="240" width="130" height="16" rx="6" fill="#b9c3d2" /><line x1="360" y1="310" x2="440" y2="310" stroke="#b9c3d2" stroke-width="3" /><rect x="144" y="300" width="150" height="16" rx="6" fill="#dde2ea" /><rect x="464" y="300" width="130" height="16" rx="6" fill="#b9c3d2" /><line x1="360" y1="370" x2="440" y2="370" stroke="#b9c3d2" stroke-width="3" /><rect x="144" y="360" width="150" height="16" rx="6" fill="#dde2ea" /><rect x="464" y="360" width="130" height="16" rx="6" fill="#b9c3d2" /><line x1="150" y1="430" x2="196" y2="468" stroke="#12397a" stroke-width="4" /><line x1="196" y1="430" x2="150" y2="468" stroke="#12397a" stroke-width="4" /></svg></div>
+        <h3>Prices side by side</h3><p>Each order line priced across your wholesalers in one table.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_compare">I need this</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="80" y="70" width="640" height="460" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="120" y="150" font-size="36" fill="#0a1524" font-weight="600">Best price per line</text><line x1="140" y1="500" x2="660" y2="500" stroke="#b9c3d2" stroke-width="4" /><rect x="160" y="410" width="70" height="90" rx="8" fill="#dfe8f7" /><rect x="280" y="300" width="70" height="200" rx="8" fill="#b9c3d2" /><rect x="400" y="360" width="70" height="140" rx="8" fill="#12397a" /><rect x="520" y="430" width="70" height="70" rx="8" fill="#dde2ea" /></svg></div>
+        <h3>Best price per line</h3><p>The cheapest available supplier picked for every item, with stock shown.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_best">I need this</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><text x="80" y="120" font-size="36" fill="#0a1524" font-weight="600">Split order sent</text><rect x="70" y="180" width="250" height="320" rx="16" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="480" y="180" width="250" height="320" rx="16" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="96" y="230" width="180" height="18" rx="6" fill="#dde2ea" /><rect x="506" y="230" width="150" height="18" rx="6" fill="#b9c3d2" /><rect x="96" y="280" width="130" height="18" rx="6" fill="#dde2ea" /><rect x="506" y="280" width="100" height="18" rx="6" fill="#b9c3d2" /><rect x="96" y="330" width="160" height="18" rx="6" fill="#dde2ea" /><rect x="506" y="330" width="130" height="18" rx="6" fill="#b9c3d2" /><polygon points="336,300 404,300 404,278 456,322 404,366 404,344 336,344" fill="#12397a" /></svg></div>
+        <h3>Split order sent</h3><p>The order split by supplier and sent to each one for you to confirm.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_split">I need this</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="80" y="70" width="640" height="460" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="120" y="150" font-size="36" fill="#0a1524" font-weight="600">Savings by month</text><rect x="140" y="210" width="500" height="52" rx="26" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="140" y="288" width="500" height="52" rx="26" fill="#12397a" /><rect x="140" y="366" width="500" height="52" rx="26" fill="#dfe8f7" stroke="#dde2ea" stroke-width="3" /><rect x="140" y="444" width="500" height="52" rx="26" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /></svg></div>
+        <h3>Savings by month</h3><p>What you saved against your usual supplier, month by month.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_savings">I need this</a>
+      </article>
     </div>
   </section>
 
-  <section id="example" data-view="example_view">
-    <h2>Example (fictional data)</h2>
-    <p class="fine">Single-site pharmacy, afternoon order of 85 lines. The table shows each line across three wholesalers; 61 lines stay with the usual supplier, 24 move to the cheaper one, and two out-of-stock items go to the third. The split order is confirmed in four minutes, and the month view shows the saving so far.</p>
-    <a class="cta" href="price.html" data-ev="click_cta_after_example">Choose your plan</a>
+  <section id="example" data-view="example_view" class="split flip">
+    <div class="stack">
+      <h2>Example</h2>
+      <p>Single-site pharmacy, afternoon order of 85 lines. The table shows each line across three wholesalers; 61 lines stay with the usual supplier, 24 move to the cheaper one, and two out-of-stock items go to the third. The split order is confirmed in four minutes, and the month view shows the saving so far.</p>
+    <a class="button" href="price.html" data-ev="click_cta_after_example">Choose your plan</a>
+    </div>
+<svg aria-hidden="true" focusable="false" class="shot reveal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><line x1="200" y1="150" x2="1000" y2="150" stroke="#dde2ea" stroke-width="6" /><circle cx="240" cy="150" r="22" fill="#ffffff" stroke="#12397a" stroke-width="6" /><text x="240" y="240" font-size="32" fill="#0a1524" font-weight="600" text-anchor="middle">85 lines</text><circle cx="600" cy="150" r="22" fill="#ffffff" stroke="#12397a" stroke-width="6" /><text x="600" y="240" font-size="32" fill="#0a1524" font-weight="600" text-anchor="middle">61 lines</text><circle cx="960" cy="150" r="22" fill="#12397a" /><text x="960" y="240" font-size="32" fill="#0a1524" font-weight="600" text-anchor="middle">four minutes</text><rect x="120" y="320" width="960" height="400" rx="24" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="170" y="400" font-size="36" fill="#0a1524" font-weight="600">three wholesalers</text><rect x="170" y="470" width="64" height="64" rx="12" fill="#dfe8f7" stroke="#dde2ea" stroke-width="3" /><rect x="260" y="470" width="64" height="64" rx="12" fill="#dfe8f7" stroke="#dde2ea" stroke-width="3" /><rect x="350" y="470" width="64" height="64" rx="12" fill="#12397a" /><rect x="440" y="470" width="64" height="64" rx="12" fill="#dfe8f7" stroke="#dde2ea" stroke-width="3" /><text x="170" y="660" font-size="30" fill="#566174">the month view</text></svg>
   </section>
 <!-- seo-tekst:start -->
-  <section id="opis">
-    <h2>How it works</h2>
-    <p>An independent pharmacy with one site often orders twice a day from more than one wholesaler. Prices differ from line to line and change during the month, so the same order can cost noticeably more or less depending on where each item is bought. Without a buyer, that comparison is done by the pharmacist or a dispenser between prescriptions — or not at all.</p>
+  <section id="opis" class="split flip">
+    <div class="stack"><h2>How it works</h2></div>
+    <div class="stack">
+      <p>An independent pharmacy with one site often orders twice a day from more than one wholesaler. Prices differ from line to line and change during the month, so the same order can cost noticeably more or less depending on where each item is bought. Without a buyer, that comparison is done by the pharmacist or a dispenser between prescriptions — or not at all.</p>
     <p>Comparing by hand means opening several wholesaler sites, searching the same item in each and noting the price and stock before the order cut-off. In practice most orders go to one usual supplier, and the margin on every line where another wholesaler was cheaper is simply lost.</p>
     <p>The service compares for you. You build the order once — from your dispensing system, a list or by typing the items — and each line is priced across the wholesalers you use. The table shows the prices side by side, with stock where the wholesaler provides it.</p>
     <p>For every line the best available price is picked, and you can override any choice: keep an item with your main supplier for a discount threshold, or move a line because of delivery times. The rules you set, such as a minimum order with a wholesaler, are applied to the whole order.</p>
@@ -114,31 +148,34 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p>Getting started takes one evening: your pharmacy details, the wholesalers you use and your usual order. The next order can be compared in the service. It works in the browser, nothing to install.</p>
     <p>The service is built for single-site independent pharmacies in England, Scotland and Wales that order from more than one wholesaler. It is in preparation: we are checking whether pharmacies need it before it is built.</p>
     <p>The pharmacy remains responsible for its orders and supplier agreements; the service compares prices and prepares the orders for your confirmation.</p>
+    </div>
   </section>
   <section id="faq">
-    <h2>Questions</h2>
-    <h3>Who is it for?</h3>
-    <p>Single-site independent pharmacies in the UK that order from more than one wholesaler.</p>
-    <h3>Does it order without my confirmation?</h3>
-    <p>No. The order is split by supplier and sent only after you confirm it.</p>
-    <h3>Can I keep items with my main supplier?</h3>
-    <p>Yes, you can override any line and set rules such as minimum orders.</p>
-    <h3>Do I need to install anything?</h3>
-    <p>No, it works in the browser.</p>
-    <h3>Can I use it already?</h3>
-    <p>Not yet. The service is in preparation, and we are checking whether pharmacies need it.</p>
+    <div class="stack"><h2>Questions</h2></div>
+    <div class="rows">
+      <div class="split flip"><h3>Who is it for?</h3><p>Single-site independent pharmacies in the UK that order from more than one wholesaler.</p></div>
+      <div class="split flip"><h3>Does it order without my confirmation?</h3><p>No. The order is split by supplier and sent only after you confirm it.</p></div>
+      <div class="split flip"><h3>Can I keep items with my main supplier?</h3><p>Yes, you can override any line and set rules such as minimum orders.</p></div>
+      <div class="split flip"><h3>Do I need to install anything?</h3><p>No, it works in the browser.</p></div>
+      <div class="split flip"><h3>Can I use it already?</h3><p>Not yet. The service is in preparation, and we are checking whether pharmacies need it.</p></div>
+    </div>
   </section>
 <!-- seo-tekst:end -->
-  <section id="start" data-view="start_view">
-    <h2>Add your pharmacy</h2>
-    <p><label>Wholesalers you order from<br><select data-ev-focus="form_start" style="margin-top:6px;padding:8px;font-size:16px"><option value="">— please choose —</option><option>1</option><option>2</option><option>3</option><option>More than 3</option></select></label></p>
-    <a class="cta" href="price.html" data-ev="form_submit_click">Start</a>
+  <section id="start" data-view="start_view" class="split">
+    <div class="stack">
+      <h2>Add your pharmacy</h2>
+    </div>
+    <div class="tile stack">
+      <label>Wholesalers you order from<select data-ev-focus="form_start"><option value="">— please choose —</option><option>1</option><option>2</option><option>3</option><option>More than 3</option></select></label>
+      <a class="button" href="price.html" data-ev="form_submit_click">Start</a>
+    </div>
   </section>
-</div>
+</main>
 
-<footer><div class="wrap">
+<footer><div class="shell">
+  <p><b>Order Compare</b></p>
   <p><a href="privacy.html" data-ev="click_legal_privacy">Privacy</a></p>
-  <p class="muted">Price comparison and order preparation for your pharmacy. The pharmacy remains responsible for its orders and supplier agreements.</p>
+  <p>Price comparison and order preparation for your pharmacy. The pharmacy remains responsible for its orders and supplier agreements.</p>
 </div></footer>
 
 </body>
